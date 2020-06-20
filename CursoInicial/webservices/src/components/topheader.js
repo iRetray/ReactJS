@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../node_modules/bootstrap/dist/css/bootstrap.css'
+import './styles/topheader.css'
 
 /* Declaracion de componente funcional, sin ciclos de vida ni state
 function TopHeader(props) {
@@ -14,8 +15,8 @@ function TopHeader(props) {
 class TopHeader extends React.Component {
     render() {
         return (
-            <div className="container">
-            <p className="display-4">Bienvenido, <strong>{this.props.name}</strong>
+            <div className="container greeting">
+            <p className="display-4">Bienvenido, <strong>{this.props.name}!</strong>
             <p className="lead"> {this.props.message}</p></p>
             </div>
         )
