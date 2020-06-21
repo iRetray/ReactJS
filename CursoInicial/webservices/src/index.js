@@ -11,22 +11,29 @@ class PrincipalPage extends React.Component {
         this.state = {
             data: [
                 {
+                  "id": 1,
                   "title": "Tomar un desayuno ligero",
                   "description": "Desayunar temprano y sano, escencial para un gran día.",
-                  "img": "https://firebasestorage.googleapis.com/v0/b/reactfileswebservices.appspot.com/o/cooking.svg?alt=media&token=53829b8f-313e-4940-8cfd-0277cc8c22b7",
-                  "button": "¡Vamos por un domicilio!"
+                  "img": "https://firebasestorage.googleapis.com/v0/b/reactfileswebservices.appspot.com/o/breakfast.svg?alt=media&token=0f0cbe9f-9115-42cf-98dd-5c58c2f507d4",
+                  "button": "¡Vamos por un domicilio!",
+                  "typeButton": "btn btn btn-primary btn-sm",                  
+                  
                 },
                 {
-                  "title": "Skills Training",
-                  "description": "Learn the secrets of bodyweight techniques",
-                  "img": "https://firebasestorage.googleapis.com/v0/b/tutoriales-e4830.appspot.com/o/exercises02.png?alt=media&token=a5d55381-5f3e-4f25-92dd-560775f96aa2",
-                  "button": "Ver WIX"
+                  "id": 2,
+                  "title": "Realizar una rutina de ejercicios",
+                  "description": "Para estar lleno de energia todo el dia, y poder tener una figura envidiable.",
+                  "img": "https://firebasestorage.googleapis.com/v0/b/reactfileswebservices.appspot.com/o/exercise.svg?alt=media&token=4ff94e42-cf51-4c6b-a67f-e7ca3494e9a9",
+                  "button": "Ver rutinas de ejercicios",
+                  "typeButton": "btn btn btn-warning btn-sm"
                 },
                 {
-                  "title": "Strength Training",
-                  "description": "Train anytime, everywere and become a superhero!",
-                  "img": "https://firebasestorage.googleapis.com/v0/b/tutoriales-e4830.appspot.com/o/exercise03.png?alt=media&token=8e5301c0-151e-415d-bd2c-655235d9c916",
-                  "button": "Ver WIX"
+                  "id": 3,
+                  "title": "Planear tu día",
+                  "description": "Asegúrate de ser productivo utilizando una lista concisa de tareas por hacer. ¿Porqué no empiezas añadiendo una tarea?",
+                  "img": "https://firebasestorage.googleapis.com/v0/b/reactfileswebservices.appspot.com/o/post.svg?alt=media&token=39387ca2-fa36-40db-b246-5a9d9fe4ace7",
+                  "button": "Recomendaciones de tareas",
+                  "typeButton": "btn btn btn-success btn-sm"
                 }
               ]
         }
@@ -45,6 +52,8 @@ class PrincipalPage extends React.Component {
                             title={tarea.title}
                             description={tarea.description}
                             button={tarea.button}
+                            typeButton={tarea.typeButton}
+                            action={tarea.action}
                             img={tarea.img}
                             />
                         )

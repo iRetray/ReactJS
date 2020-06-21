@@ -14,7 +14,7 @@ class Card extends React.Component {
                     <div className="col-6 textCard center">
                         <h2>{this.props.title}</h2>
                         <p>{this.props.description}</p>
-                        <button type="button" className="btn btn-primary"><i className="fab fa-internet-explorer"></i>{this.props.button}</button>
+                        <button type="button" className={this.props.typeButton}>{this.props.button}</button>
                     </div>                    
                 </div>
             </div>
