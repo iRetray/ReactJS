@@ -6,9 +6,9 @@ class NotFound extends React.Component {
     render() {
         return(
             <div className="container404">
-                <center><p className="display-3">Página web no encontrada
-                    <p className="text-muted">Error 404</p>
-                </p></center>
+                <center><p className="display-3">Página web no encontrada</p>
+                    <p className="display-4 text-muted">Error 404</p>
+                </center>
                 <img src={ img404 } className="img404"/>
             </div>
         )

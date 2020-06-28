@@ -4,9 +4,7 @@ import TopHeader from '../components/topheader'
 import NewService from "../components/NewService"
 
 class ListHome extends React.Component {
-    constructor(props){
-        super(props)
-        this.state = {
+    state = {
             data: [
                 {
                   "id": 1,
@@ -34,7 +32,6 @@ class ListHome extends React.Component {
                   "typeButton": "btn btn btn-success btn-sm"
                 }
               ]
-        }
     }
     render(){
         return(

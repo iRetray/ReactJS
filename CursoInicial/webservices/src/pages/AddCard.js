@@ -5,7 +5,7 @@ class AddCard extends React.Component {
     render() {
         return(
             <div>
-                <NewService />
+                
             </div>            
         )   
     }
