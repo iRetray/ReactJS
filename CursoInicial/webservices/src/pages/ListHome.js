@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from '../components/card'
 import TopHeader from '../components/topheader'
+import NewService from "../components/NewService"
 
 class ListHome extends React.Component {
     constructor(props){
@@ -55,7 +56,8 @@ class ListHome extends React.Component {
                             />
                         )
                     })
-                }                
+                }
+                <NewService />             
             </div>
         )
     }

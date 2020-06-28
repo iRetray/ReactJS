@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ListHome from './pages/ListHome'
-
+import App from './components/App'
 
 const containerHeader = document.getElementById('app')
-ReactDOM.render(<ListHome />, containerHeader)
+ReactDOM.render(<App />, containerHeader)
 
 /*
 const containerHeader = document.getElementById('header')
